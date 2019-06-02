@@ -4,7 +4,7 @@ import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 
-object FutureForComprehensionTestCase extends TestCase {
+object FutureForComprehensionMathTanTestCase extends SumTestCase {
 
   override def sum: Double = {
     val f = for {

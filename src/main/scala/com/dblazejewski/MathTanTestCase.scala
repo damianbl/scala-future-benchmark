@@ -7,6 +7,6 @@ trait Sum {
   def sum: Double
 }
 
-abstract class TestCase extends Sum {
+abstract class SumTestCase extends Sum {
   val (t1, t2, t3) = (Future(Math.tan(9876.12)), Future(Math.tan(965552.17)), Future(Math.tan(343235.54)))
 }
