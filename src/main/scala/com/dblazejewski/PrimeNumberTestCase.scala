@@ -4,20 +4,20 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
 trait PrimeNumber {
-  def findSum: Int
+  def findSum: Long
 }
 
 abstract class PrimeNumberTestCase extends PrimeNumber {
-  private def isPrime(n: Int): Future[Boolean] = Future {
+  private def isPrime(n: Long): Future[Boolean] = Future {
     n match {
       case 0 | 1 => false
       case 2 | 3 => true
-      case _ => (2 to Math.sqrt(n).toInt).forall(y => n % y != 0)
+      case _ => (2L to Math.sqrt(n).toLong).forall(y => n % y != 0)
     }
   }
 
-  protected def findNextPrime(n: Int): Future[Int] = {
-    def iterate(m: Int): Future[Int] = {
+  protected def findNextPrime(n: Long): Future[Long] = {
+    def iterate(m: Long): Future[Long] = {
       isPrime(m) flatMap { prime =>
         if (prime) Future.successful(m)
         else iterate(m + 1)
