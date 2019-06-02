@@ -10,5 +10,5 @@ import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Mode, OutputTimeUn
 class FuturePrimeNumberBenchmark {
 
   @Benchmark
-  def futureSequenceTestCase(): Unit = FutureSequencePrimeNumberTestCase.findSum
+  def futureSequenceTestCase(): Unit = FutureSequencePrimeNumberTestCase.sum
 }

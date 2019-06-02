@@ -1,17 +1,15 @@
 package com.dblazejewski
 
+import com.dblazejewski.benchmark.common.Sum
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
-trait PrimeNumber {
-  def findSum: Long
-}
-
-abstract class PrimeNumberTestCase extends PrimeNumber {
+abstract class PrimeNumberTestCase extends Sum[Long] {
   private def isPrime(n: Long): Future[Boolean] = Future {
     n match {
-      case 0 | 1 => false
-      case 2 | 3 => true
+      case 0L | 1L => false
+      case 2L | 3L => true
       case _ => (2L to Math.sqrt(n).toLong).forall(y => n % y != 0)
     }
   }
