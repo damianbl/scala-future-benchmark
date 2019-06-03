@@ -1,8 +1,8 @@
-package com.dblazejewski.tan
+package com.dblazejewski.future.tan
 
+import scala.concurrent.{Await, Future}
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
-import scala.concurrent.{Await, Future}
 
 object FutureSequenceMathTanTestCase extends MathTanTestCase {
   override def sum: Double = {

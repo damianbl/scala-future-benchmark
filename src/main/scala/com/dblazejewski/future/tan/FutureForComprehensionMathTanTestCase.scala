@@ -1,4 +1,4 @@
-package com.dblazejewski.tan
+package com.dblazejewski.future.tan
 
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global

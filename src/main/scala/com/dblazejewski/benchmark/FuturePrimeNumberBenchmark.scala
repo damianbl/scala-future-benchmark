@@ -2,7 +2,7 @@ package com.dblazejewski.benchmark
 
 import java.util.concurrent.TimeUnit
 
-import com.dblazejewski.prime.{FutureForComprehensionPrimeNumberTestCase, FutureSequencePrimeNumberTestCase}
+import com.dblazejewski.future.prime.{FutureForComprehensionPrimeNumberTestCase, FutureSequencePrimeNumberTestCase}
 import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Mode, OutputTimeUnit}
 
 

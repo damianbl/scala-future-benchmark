@@ -2,7 +2,8 @@ package com.dblazejewski.benchmark
 
 import java.util.concurrent.TimeUnit
 
-import com.dblazejewski.tan.{FutureForComprehensionMathTanTestCase, FutureSequenceMathTanTestCase}
+import com.dblazejewski.future.tan.{FutureForComprehensionMathTanTestCase, FutureSequenceMathTanTestCase}
+import com.dblazejewski.tan.FutureSequenceMathTanTestCase
 import org.openjdk.jmh.annotations.{Benchmark, BenchmarkMode, Mode, OutputTimeUnit}
 
 @BenchmarkMode(Array(Mode.AverageTime))

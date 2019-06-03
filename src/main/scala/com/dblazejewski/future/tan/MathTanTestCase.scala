@@ -1,4 +1,4 @@
-package com.dblazejewski.tan
+package com.dblazejewski.future.tan
 
 import com.dblazejewski.benchmark.common.Sum
 

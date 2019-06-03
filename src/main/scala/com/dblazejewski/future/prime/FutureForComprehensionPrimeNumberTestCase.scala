@@ -1,4 +1,4 @@
-package com.dblazejewski.prime
+package com.dblazejewski.future.prime
 
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global

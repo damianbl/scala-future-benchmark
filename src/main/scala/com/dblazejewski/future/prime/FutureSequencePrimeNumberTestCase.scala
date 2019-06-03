@@ -1,4 +1,4 @@
-package com.dblazejewski.prime
+package com.dblazejewski.future.prime
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._

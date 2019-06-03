@@ -1,4 +1,4 @@
-package com.dblazejewski.prime
+package com.dblazejewski.future.prime
 
 import com.dblazejewski.benchmark.common.Sum
 
