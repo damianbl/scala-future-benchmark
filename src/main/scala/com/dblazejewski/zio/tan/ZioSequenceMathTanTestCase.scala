@@ -1,13 +1,7 @@
 package com.dblazejewski.zio.tan
 
 import zio.Exit.{Failure, Success}
-import zio.blocking.Blocking
-import zio.clock.Clock
-import zio.console.Console
-import zio.internal.{Platform, PlatformLive}
-import zio.random.Random
-import zio.system.System
-import zio.{DefaultRuntime, Runtime, ZEnv, ZIO}
+import zio.{DefaultRuntime, ZIO}
 
 object ZioSequenceMathTanTestCase extends MathTanTestCase {
   override def sum: Double = {
