@@ -8,14 +8,14 @@ object FutureForComprehensionMathTanTestCase extends MathTanTestCase {
 
   override def sum: Double = {
     val f = for {
-      r1 <- t1
-      r2 <- t2
-      r3 <- t3
-      r4 <- t4
-      r5 <- t5
-      r6 <- t6
-      r7 <- t7
-      r8 <- t8
+      r1 <- ft1
+      r2 <- ft2
+      r3 <- ft3
+      r4 <- ft4
+      r5 <- ft5
+      r6 <- ft6
+      r7 <- ft7
+      r8 <- ft8
     } yield r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8
 
     Await.result(f, 1000 millis)
